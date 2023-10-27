@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="back mt-3 ms-4">
+        <form><input class="p-1 rounded-3 bg-secondary-subtle" type="button" value="Back" onclick="history.go(-1)"></form>
+    </div>
+
+    <h2 class="d-flex justify-content-center m-2">Hadits Imam Muslim</h2>
+    
+    <div class="search d-flex justify-content-center">
+        <input type="text" id="search-hadits" class="p-1 w-75 my-3" placeholder="Enter here">
+        <button class="btn btn-secondary me-1 mx-2 h-50 my-3" onclick="btnSearch()">Find Hadits</button>
+    </div>
+
+    <h4 id="judul-pencarian" class="m-4"></h4>
+    <div id="output-search" class="ms-4 mb-2"></div>
+
+    <h4 class="mx-4">Hadits Pilihan</h4>
+    <div id="output-hadits" class="d-flex flex-column gap-4 px-4"></div>
+    
+    <script src="../bootstrap/js/bootstrap.bundle.min.js">
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
+        integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../main.js"></script>
+    <script>
+        gethaditsbyid()
+    </script>
+
+</body>
+
+</html>
